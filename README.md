@@ -1,1 +1,3 @@
-# hello-jni
+JNI小例子
+
+讲述CMakeLists.txt的基本写法
