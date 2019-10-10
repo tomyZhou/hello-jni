@@ -55,10 +55,10 @@
 
 
  JNIEXPORT int JNICALL Java_com_example_hellojni_JNIUtil_checkPwd(JNIEnv *env,jobject instance,jstring pwd_){
-    //char* originPwd = "123456";
-    //char* formPwd = jstringToChar(env,pwd_);
-    //int code = strcmp(originPwd,formPwd);
-    return 0;
+    char* originPwd = "123456";
+    char* formPwd = jstringToChar(env,pwd_);
+    int code = strcmp(originPwd,formPwd);
+    return code;
  }
 
 JNIEXPORT void JNICALL Java_com_example_hellojni_JNIUtil_getBitmapInfo(JNIEnv *env,jobject instance,jobject bitmap){
