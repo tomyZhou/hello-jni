@@ -29,6 +29,10 @@ Java_com_example_hellojni_JNIUtil_checkPwd(JNIEnv *env, jobject instance, jstrin
 
 JNIEXPORT void JNICALL
 Java_com_example_hellojni_JNIUtil_getBitmapInfo(JNIEnv *env,jobject instance,jobject bitmap);
+
+JNIEXPORT void JNICALL
+Java_com_example_hellojni_JNIUtil_arraySort(JNIEnv *env,jobject instance,jintArray array);
+
 #ifdef __cplusplus
 }
 #endif

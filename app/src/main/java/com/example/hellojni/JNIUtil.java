@@ -18,4 +18,8 @@ public class JNIUtil {
 
     public native void getBitmapInfo(Bitmap bitmap);
 
+    public native int[] arraySort(int [] array);
+
+
+
 }

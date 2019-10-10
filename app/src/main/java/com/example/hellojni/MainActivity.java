@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
         Bitmap bmp = BitmapFactory.decodeResource(res, R.drawable.timg);
         new JNIUtil().getBitmapInfo(bmp);
 
+        int[] array = {1, 8, 3, 9, 22, 5, 10, 73, 4};
+        new JNIUtil().arraySort(array);
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+
 
     }
 }

@@ -1,10 +1,10 @@
-#ifndef _LOG_UTILS_H_
+#ifndef _LOG_UTILS_H_  //宏开关  这类宏的作用就是为了防止头文件重复包含。
 #define _LOG_UTILS_H_
 
 #include <android/log.h>
 #include <string.h>
 
-#define DEBUG // 可以通过 CmakeLists.txt 等方式来定义在这个宏，实现动态打开和关闭LOG
+#define DEBUG // 可以通过 CmakeLists.txt 等方式来定义在这个宏，实现动态打开和关闭LOG。这种编译称为条件编译
 
 // Windows 和 Linux 这两个宏是在 CMakeLists.txt 通过 ADD_DEFINITIONS 定义的
 #ifdef Windows
